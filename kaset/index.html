@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drama Arena 5100 Documentation</title>
+
+    <!-- Mycss-->
+     <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <iframe class="video"
+        src="https://www.youtube.com/embed/ZWEfDIQ9ZwE?autoplay=1&mute=1&controls=0&loop=1">
+        </iframe>
+        <!-- <h1>Dokumentasi Drama Arena</h1> -->
+    </div>
+    <div class="gallery">
+        <div class="page page-1"></div>
+        <div class="page page-2"></div>
+        <div class="page page-1"></div>
+    </div>
+    <script>
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    console.log(`Scrolled: ${Math.round(scrollPercent)}%`);
+  });
+</script>
+</body>
+</html>
